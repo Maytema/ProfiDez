@@ -208,7 +208,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Добавляем анимации появления для элементов
-document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .step, .knowledge-item, .faq-item, .contact-item').forEach(el => {
+document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .step, .knowledge-item, .faq-item, .contact-item, .stat-item').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
