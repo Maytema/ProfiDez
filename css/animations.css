@@ -1,1 +1,70 @@
-/* Floating Widget Animations */@keyframes slideInRight {    from {        transform: translateX(120px);        opacity: 0;    }    to {        transform: translateX(0);        opacity: 1;    }}@keyframes scaleIn {    from {        transform: scale(0);        opacity: 0;    }    to {        transform: scale(1);        opacity: 1;    }}/* Review Form Animations */@keyframes fadeInUp {    from {        opacity: 0;        transform: translateY(20px);    }    to {        opacity: 1;        transform: translateY(0);    }}@keyframes fadeOutDown {    from {        opacity: 1;        transform: translateY(0);    }    to {        opacity: 0;        transform: translateY(20px);    }}/* Smooth hover transitions */.floating-widget {    animation: slideInRight 0.6s ease forwards;}.floating-widget.active {    animation: none;}.widget-minimized {    animation: scaleIn 0.6s ease forwards;}.widget-minimized.active {    animation: none;}.review-form.active {    animation: fadeInUp 0.4s ease forwards;}.review-form.closing {    animation: fadeOutDown 0.4s ease forwards;}
+/* Floating Widget Animations */
+@keyframes slideInRight {
+    from {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Review Form Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Smooth hover transitions */
+.floating-widget {
+    animation: slideInRight 0.6s ease forwards;
+}
+
+.floating-widget.active {
+    animation: none;
+}
+
+.widget-minimized {
+    animation: scaleIn 0.6s ease forwards;
+}
+
+.widget-minimized.active {
+    animation: none;
+}
+
+.review-form.active {
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.review-form.closing {
+    animation: fadeOutDown 0.4s ease forwards;
+}
