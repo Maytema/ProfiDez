@@ -135,4 +135,5 @@ document.getElementById('reviewFormData').addEventListener('submit', function(e)
         radio.checked = false;
     });
     closeReviewForm();
+
 });
