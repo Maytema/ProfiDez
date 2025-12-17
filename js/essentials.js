@@ -111,4 +111,5 @@ function updateTimer() {
 // Social Media Integration
 function showInstagramMessage() {
     alert('Наш аккаунт в Instagram пока в разработке. Следите за обновлениями!');
+
 }
