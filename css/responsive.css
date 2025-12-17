@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background: white;
+        flex-direction: column;
+        padding: 4rem 1.5rem 2rem;
+        box-shadow: none;
+        border-radius: 0 0 20px 20px;
+        transition: all 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        transform: translateY(-100%);
+    }
+    
+    .nav-links.show {
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        margin: 0;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        text-align: center;
+    }
+    
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+    }
+    
+    .btn, .btn-whatsapp, .btn-telegram, .btn-phone {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .promo-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.6rem;
+    }
+    
+    section {
+        padding: 2.5rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .floating-widget {
+        width: calc(100vw - 40px);
+        right: 20px;
+        bottom: 20px;
+        max-height: 150px;
+    }
+    
+    .widget-minimized {
+        width: 50px;
+        height: 50px;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .service-card, .testimonial-card, .contact-form, .review-form {
+        padding: 1rem;
+    }
+    
+    .pricing-card {
+        padding: 1rem 0.8rem;
+    }
+    
+    .floating-widget {
+        width: calc(100vw - 40px);
+    }
+}
